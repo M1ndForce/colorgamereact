@@ -1,7 +1,8 @@
-
+import ScriptTag from "react-script-tag";
 import "./App.css";
 
 function App() {
+  const Demo = () => <ScriptTag src="js/colorGame.js" type="text/javascript" />;
   return (
     <div className="App">
       <h1>
@@ -29,6 +30,7 @@ function App() {
         <div className="square" />
         <div className="square" />
       </div>
+      <Demo />
     </div>
   );
 }
